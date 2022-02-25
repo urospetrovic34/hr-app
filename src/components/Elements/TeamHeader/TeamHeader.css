@@ -1,0 +1,89 @@
+.admin-header-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.admin-header-container button{
+    outline:none;
+    border: none;
+    padding:7px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color:#001628;
+    color:#99D9D9;
+    font-size:15px;
+    font-weight: 300;
+    letter-spacing:1px;
+}
+
+.add-member-button:hover{
+    color:#E9072B;
+}
+
+.team-header{
+    margin-bottom:15px;
+}
+
+.pending-buttons{
+    display: flex;
+    gap:10px;
+}
+
+.guest-header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#001628;
+    padding:10px;
+    border-radius:4px;
+}
+
+.guest-header-row-one{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.guest-header-row-two{
+    display: flex;
+    gap:10px;
+}
+
+.guest-header-row-two input{
+    border: 1px solid lightgray;
+}
+
+.company-avatar{
+    object-fit:cover;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1060px) {
+    .pending-header{
+        font-size:25px;
+    }
+    .add-member-button{
+        font-size:12px!important;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .pending-header{
+        font-size:20px;
+    }
+    .pending-buttons{
+        flex-direction: column;
+    }
+
+    .guest-header-row-two{
+        display: block;
+        width: 40%;
+    }
+    .guest-header-row-one h2{
+        font-size:19px;
+    }
+}
